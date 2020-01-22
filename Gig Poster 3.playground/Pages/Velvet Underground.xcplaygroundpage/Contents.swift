@@ -71,7 +71,7 @@ for columns in 0...4 {
 
 //print the velvet underground text
 canvas.textColor = offWhite
-canvas.drawText(message: "the velvet underground", at: Point(x: 10, y: 416), size: 34, kerning: -2)
+canvas.drawText(message: "the velvet underground", at: Point(x: 10, y: 410), size: 34, kerning: -2)
 
 //draw two white horizontal lines
 //change line thickness
