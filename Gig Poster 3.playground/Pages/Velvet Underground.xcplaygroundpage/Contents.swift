@@ -59,7 +59,7 @@ for columns in 0...4 {
         canvas.drawRectangle(at: Point(x: x, y: y), width: 17, height: 64)
         
         canvas.defaultLineWidth = 17
-        canvas.drawLine(from: Point(x: x + 65, y: y + 65), to: Point(x: x + 20, y: y + 20))
+        canvas.drawLine(from: Point(x: x + 67, y: y + 67), to: Point(x: x + 20, y: y + 20))
         if column == 4 {
             x = x + 80
         
@@ -79,7 +79,30 @@ canvas.defaultLineWidth = 2
 canvas.drawLine(from: Point(x: 0, y: 467), to: Point(x: 400, y: 467))
 canvas.drawLine(from: Point(x: 0, y: 570), to: Point(x: 400, y: 570))
 
+//draw three blocks of info
+//x values
+let block1x = 10
+let block2x = 150
+let block3x = 300
 
+//y values
+let row1y = 550
+let row2y = 540
+
+//size value
+let size = 8
+
+//first block
+canvas.drawText(message: "first appearance in london", at: Point(x: block1x, y: row1y), size: size)
+canvas.drawText(message: "the london college of printing", at: Point(x: block1x, y: row2y), size: size)
+
+//second block
+canvas.drawText(message: "with spring and pollyfloskin", at: Point(x: block2x, y: row1y), size: size)
+canvas.drawText(message: "plus the great western light show", at: Point(x: block2x, y: row2y), size: size)
+
+//third block
+canvas.drawText(message: "thursday", at: Point(x: block3x, y: row1y), size: size)
+canvas.drawText(message: "october 14 1971 / 8 pm", at: Point(x: block3x, y: row2y), size: size)
 
 /*:
  ## Use Source Control
