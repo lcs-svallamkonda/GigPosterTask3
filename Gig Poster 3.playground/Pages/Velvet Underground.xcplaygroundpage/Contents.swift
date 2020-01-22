@@ -43,7 +43,7 @@ for columns in 0...4 {
     //   determine x and y positions
     
     for column in 0...4 {
-        let y = column * 84
+        let y = column * 80
         
         //get the different coloured arrows
         if columns == column {
